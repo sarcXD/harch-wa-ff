@@ -1,0 +1,17 @@
+{
+
+    "manifest_version": 2,
+    "name": "harch-wa-ff",
+    "version": "1.0",
+  
+    "description": "Hide the archived chat in whatsapp web ( a convenience script, more like )",
+    "content_scripts": [
+      {
+        "matches": ["*://*.whatsapp.com/*"],
+        "js": ["main.js"],
+        "run_at": "document_end",
+        "all_frames": true
+      }
+    ]
+  }
+  
